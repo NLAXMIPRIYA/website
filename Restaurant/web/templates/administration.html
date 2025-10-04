@@ -1,0 +1,188 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administration | Ashna’s Aashiyaana</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdf1dc;
+            color: #333;
+        }
+        .head {
+            background-color: inherit;
+            color: black;
+            padding: 15px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .team-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            justify-content: space-evenly;
+            gap: 30px;
+            padding: 40px;
+        }
+        .team-member {
+            width: 400px;
+            height: 400px;
+            background: transparent;
+            border-radius: 10px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+            text-align: center;
+            padding: 20px;
+        }
+        .team-member img {
+            width: 120px;
+            height: 120px;
+            border-radius: 30px;
+            margin-bottom: 15px;
+            border: 3px solid wheat;
+            box-shadow: 0px 8px 20px rgba(0,0,0,0.5);
+        }
+        .team-member h3 {
+            margin: 10px 0 5px;
+            color: #8B0000;
+        }
+        .team-member p {
+            font-size: 14px;
+            color: #555;
+        }
+        .footer-bottom{
+            text-align: center;
+            padding: 15px;
+            background: #333;
+            color: white;
+            margin-top: 40px;
+        }
+        nav{
+    height: 65px;
+    width: 70%;
+    border: 2px solid black;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 50px / 25px; 
+    border-top: #BFABCB;
+    border-bottom: #BFABCB;
+    background-color: maroon;
+    text-align: center;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    font-size: xx-large;
+    text-align: center;
+    align-items: center;
+}
+li{
+    display: inline-block;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #392F5A;
+    font-size: xx-large;
+    padding-top: 10px;
+
+    
+}
+a{
+    text-decoration: none;
+    color: #f4d03f;
+}
+p{
+    text-align: center;
+}
+.in{
+    color: #f4d03f;
+}
+    </style>
+</head>
+<body>
+    <header>
+    <div style="text-align: center; margin: 40px;">
+    <img src="{% static 'ashna.png' %}" alt="LOGO" 
+style="display: block; margin: auto; width: 300px; height: 300px;">
+
+</div>
+    <nav class="container"><ul class="top_list"><li class="list">
+    <a href="{% url 'home' %}">Home</a>
+    </li>
+    <li class="list"><a href="{% url 'menu'%}">Menu</a></li>
+    <li class="list"><a href="{% url 'administration' %}">Administration</a></li>
+    <li class="list"><a href="{% url 'contact' %}">Contact US</a></li>
+</ul></nav>
+<br>
+<br>
+        <h1 class="head">Administration Team</h1>
+        <p>Meet the people who make Ashna’s Aashiyaana feel like home ❤️</p>
+    </header>
+
+    <div class="team-container">
+        <div class="team-member">
+            <img src="https://d2gjqh9j26unp0.cloudfront.net/profilepic/1207b4cbbeb039cf230a2e08ab7b77e0" alt="Shreya">
+            <h3>SHREYA</h3>
+            <p>General Manager<br>
+            Shreya brings over a decade of leadership in hospitality. She ensures smooth operations, happy staff, and satisfied guests. Her vision is to create a dining space that feels like family.  
+            </p>
+            <cite><a href="https://www.linkedin.com/in/shreya" target="_blank" class="in">LinkedIn Profile</a></cite>
+        </div>
+
+        <div class="team-member">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKndibt4jwJz1aPDYWvjMnHen6VC9NsGkpYK3r0i4o8FZ0awnr0rHMpeqSw8GOPgOq2hE&usqp=CAU" alt="Mia">
+            <h3>MIA</h3>
+            <p>Operations Head<br>
+            Mia is known for her precision and problem-solving skills. She oversees day-to-day activities and ensures every guest gets a seamless experience. Her dedication keeps the heart of our restaurant beating.  
+            </p>
+            <cite><a href="https://www.linkedin.com/in/mia" target="_blank">LinkedIn Profile</a></cite>
+        </div>
+
+        <div class="team-member">
+            <img src="https://coalitionforsustainableaquaculture.org/wp-content/uploads/2024/02/ashwin.png" alt="Ashwin">
+            <h3>ASHWIN</h3>
+            <p>Executive Chef<br>
+            Ashwin crafts culinary masterpieces with love and authenticity. Specializing in CONTINENTAL cuisine, he combines tradition with innovation to deliver unforgettable flavors.  
+            </p>
+            <cite><a href="https://www.linkedin.com/in/ashwin" target="_blank">LinkedIn Profile</a></cite>
+        </div>
+
+        <div class="team-member">
+            <img src="https://secure.b8cdn.com/images/uploads/user_photos/03/13027903_20170802164225.jpg" alt="Zara">
+            <h3>ZARA</h3>
+            <p>Marketing Head<br>
+            Zara has a flair for storytelling and creativity. She brings Ashna’s Aashiyaana closer to the community through campaigns, events, and digital presence.  
+            </p>
+            <cite><a href="https://www.linkedin.com/in/zara" target="_blank">LinkedIn Profile</a></cite>
+        </div>
+
+        <div class="team-member">
+            <img src="https://media-speakerfile-pre.s3.amazonaws.com/images_avatars/ef2f1d06966cc3b5beb0235f096cb0a41603913307_l.jpg" alt="Viren">
+            <h3>VIREN</h3>
+            <p>Finance Manager<br>
+            With a sharp eye for detail, Viren ensures financial stability and growth. His expertise in budgeting and cost optimization keeps the restaurant thriving sustainably.  
+            </p>
+            <cite><a href="https://www.linkedin.com/in/viren" target="_blank">LinkedIn Profile</a></cite>
+        </div>
+
+        <div class="team-member">
+            <img src="https://media.licdn.com/dms/image/v2/D5603AQG99qI7y44P9g/profile-displayphoto-shrink_400_400/B56ZUe96rFGQAg-/0/1739981312033?e=2147483647&v=beta&t=Jwqwxg4hoeaV8l15__8sQwLevqyucUEMIbmPdd_AuKU" alt="Virat">
+            <h3>VIRAT</h3>
+            <p>Customer Relations<br>
+            Virat is the friendly face who ensures every guest feels welcomed and valued. His communication skills and warm approach turn first-time visitors into loyal customers.  
+            </p>
+            <cite><a href="https://www.linkedin.com/in/virat" target="_blank">LinkedIn Profile</a></cite>
+        </div>
+    </div>
+
+    <footer>
+           <div class="footer-bottom">
+    Made with <span style="color: black">&#10084;</span> by Ashna’s Aashiyaana &copy; 2025. All Rights Reserved.
+</div>
+    </footer>
+</body>
+</html>

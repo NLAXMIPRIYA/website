@@ -1,0 +1,106 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT US | ASHNA</title>
+    <style>
+        body{
+    background-color: #fdf1dc
+        }
+        h1{
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border-bottom: 3px solid ivory;
+            margin-bottom: 15px;
+            font-size: 60px;
+        }
+        .fam{
+            display: block;
+            margin: auto;
+            border-radius: 15px;
+            box-shadow: 0px 8px 20px rgba(0,0,0,0.5);
+        }
+                .footer-bottom{
+            text-align: center;
+            padding: 15px;
+            background: #333;
+            color: white;
+            margin-top: 40px;
+        }
+        nav{
+    height: 65px;
+    width: 70%;
+    border: 2px solid black;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 50px / 25px; 
+    border-top: #BFABCB;
+    border-bottom: #BFABCB;
+    background-color: maroon;
+    text-align: center;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    color: #392F5A;
+    font-size: xx-large;
+    text-align: center;
+    align-items: center;
+}
+li{
+    display: inline-block;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #f4d03f;
+    font-size: xx-large;
+    padding-top: 10px;
+
+    
+}
+a{
+    text-decoration: none;
+    color: #f4d03f;
+}
+    </style>
+</head>
+<body>
+    <header>
+    <div style="text-align: center; margin: 40px;">
+    <img src="{% static 'ashna.png' %}" alt="LOGO" 
+style="display: block; margin: auto; width: 300px; height: 300px;">
+
+</div>
+    <nav class="container"><ul class="top_list"><li class="list">
+    <a href="{% url 'home' %}">Home</a>
+    </li>
+    <li class="list"><a href="{% url 'menu'%}">Menu</a></li>
+    <li class="list"><a href="{% url 'administration' %}">Administration</a></li>
+    <li class="list"><a href="{% url 'contact' %}">Contact US</a></li>
+</ul></nav>
+<br>
+<br>
+    <h1 class="h" style="color: maroon; font-family: 'Times New Roman', Times, serif;">Contact Us</h1>
+    <img src="https://plus.unsplash.com/premium_photo-1726880561723-af550a0fc30a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="FINAL" class="fam" >
+    <center>
+    <br>
+    <br>
+    <br>
+<div style="font-size: x-large;">
+<strong>
+At Ashna’s Aashiyaana, we would love to hear from you. For reservations, enquiries, or feedback, please reach out to us at: 
+<br>
+📞 Phone: +91 98765 43210
+<br>
+✉️ Email: contact@ashnasaashiyaana.com
+<br>
+<br>
+<i>We look forward to welcoming you soon.</i>
+    </center> </strong></div>
+    <footer>
+    <div class="footer-bottom">
+    Made with <span style="color: black">&#10084;</span> by Ashna’s Aashiyaana &copy; 2025. All Rights Reserved.
+</div>
+    </footer>
+</body>
+</html>
